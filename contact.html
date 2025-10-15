@@ -3,38 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | Your Name</title>
+  <title>Contact | James Kun</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Contact Me</h1>
+    <h1>Let's Connect</h1>
     <nav>
       <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
       <a href="contact.html">Contact</a>
-      <a href="projects">Projects</a>
     </nav>
   </header>
 
-  <section>
-    <h2>Send me a message</h2>
+  <section class="contact">
+    <h2>Send a Message</h2>
+    <p>If you’d like to work together or discuss a project, fill out the form below — I’ll get back to you as soon as I can.</p>
+
     <form action="https://api.staticforms.xyz/submit" method="POST">
-      <input type="hidden" name="accessKey" value="sf_imnd7fe0bdg3l67n325cmehb"> <!-- replace later -->
-      <label>Name:</label>
-      <input type="text" name="name" required>
+      <input type="hidden" name="accessKey" value="sf_imnd7fe0bdg3l67n325cmehb">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
 
-      <label>Email:</label>
-      <input type="email" name="email" required>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
 
-      <label>Message:</label>
-      <textarea name="message" required></textarea>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
 
-      <button type="submit">Send</button>
+      <button type="submit">Send Message</button>
     </form>
   </section>
 
   <footer>
-    <p>© 2025 Your Name</p>
+    <p>© 2025 James Kun. All rights reserved.</p>
   </footer>
 </body>
 </html>
+
