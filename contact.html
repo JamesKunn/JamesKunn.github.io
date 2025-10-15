@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Your Name</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Contact Me</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+      <a href="projects">Projects</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Send me a message</h2>
+    <form action="https://api.staticforms.xyz/submit" method="POST">
+      <input type="hidden" name="accessKey" value="sf_imnd7fe0bdg3l67n325cmehb"> <!-- replace later -->
+      <label>Name:</label>
+      <input type="text" name="name" required>
+
+      <label>Email:</label>
+      <input type="email" name="email" required>
+
+      <label>Message:</label>
+      <textarea name="message" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Your Name</p>
+  </footer>
+</body>
+</html>
