@@ -1,44 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>James Kun | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>James Kun — Web Developer • VA • AI Automation</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>James Kun</h1>
-    <p>Web Developer • Virtual Assistant • AI Automation Specialist</p>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>James Kun</h1>
+        <p class="tag">Web Developer • Virtual Assistant • AI Automation Specialist</p>
+      </div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#tech">Tech Stacks</a>
+        <a href="#projects">Projects</a>
+        <a href="#certs">Certifications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I'm a results-driven professional with experience in web development, data management, and virtual assistance.
-      I build clean, efficient, and user-focused websites while helping businesses streamline operations through automation and organized digital processes.
-      My goal is to combine creativity and productivity to make work smarter, not harder.
-    </p>
-  </section>
+  <main>
+    <!-- ABOUT -->
+    <section id="about" class="section container">
+      <div class="about-grid">
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>
+            I’m James Kun — a results-driven professional specializing in front-end web development,
+            efficient data management, virtual assistance, and AI-enabled automation workflows.
+            I focus on clean interfaces and practical automations that save time and reduce errors.
+          </p>
+          <p>
+            I deliver reliable work for small businesses, entrepreneurs, and teams who need fast,
+            dependable support — both on the website side and the operational side.
+          </p>
+        </div>
+        <div class="about-photo">
+          <img src="assets/profile.jpg" alt="James Kun — profile photo" />
+        </div>
+      </div>
+    </section>
 
-  <section id="skills">
-    <h2>Core Skills</h2>
-    <ul>
-      <li>Responsive Web Design (HTML, CSS, JavaScript)</li>
-      <li>Data Entry and File Management</li>
-      <li>Virtual Assistance and Admin Support</li>
-      <li>AI Automation using modern tools and workflows</li>
-    </ul>
-  </section>
+    <!-- TECH STACKS -->
+    <section id="tech" class="section container">
+      <h2>Tech Stacks</h2>
+      <p class="muted">Click a skill to view details about my experience.</p>
 
-  <footer>
-    <p>© 2025 James Kun. All rights reserved.</p>
+      <div class="tech-grid" id="techGrid">
+        <!-- items: update image src & data-tech as needed -->
+        <button class="tech-item" data-tech="HTML">
+          <img src="assets/tech/html.png" alt="HTML" />
+          <span>HTML</span>
+        </button>
+
+        <button class="tech-item" data-tech="CSS">
+          <img src="assets/tech/css.png" alt="CSS" />
+          <span>CSS</span>
+        </button>
+
+        <button class="tech-item" data-tech="JavaScript">
+          <img src="assets/tech/js.png" alt="JavaScript" />
+          <span>JavaScript</span>
+        </button>
+
+        <button class="tech-item" data-tech="Python">
+          <img src="assets/tech/python.png" alt="Python" />
+          <span>Python</span>
+        </button>
+
+        <button class="tech-item" data-tech="Excel">
+          <img src="assets/tech/excel.png" alt="Excel" />
+          <span>Excel</span>
+        </button>
+
+        <button class="tech-item" data-tech="Zapier">
+          <img src="assets/tech/zapier.png" alt="Zapier" />
+          <span>Zapier</span>
+        </button>
+
+        <button class="tech-item" data-tech="ChatGPT">
+          <img src="assets/tech/chatgpt.png" alt="ChatGPT" />
+          <span>ChatGPT</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section container">
+      <h2>Projects</h2>
+      <p class="muted">A selection of work demonstrating websites, automation, and workflows.</p>
+
+      <div class="carousel" id="carousel">
+        <div class="slides">
+          <div class="slide active">
+            <img src="assets/projects/project1.jpg" alt="Project 1 — Portfolio" />
+            <div class="slide-caption">
+              <h3>Personal Portfolio Website</h3>
+              <p>Responsive site built with HTML, CSS, and JavaScript. Simple, fast, and easy to maintain.</p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="assets/projects/project2.jpg" alt="Project 2 — Automation" />
+            <div class="slide-caption">
+              <h3>Data Automation Pipeline</h3>
+              <p>AI-assisted process to collect, clean, and export client data — reducing manual entry time.</p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="assets/projects/project3.jpg" alt="Project 3 — VA system" />
+            <div class="slide-caption">
+              <h3>Virtual Assistant Workflow</h3>
+              <p>Task system for scheduling, document handling, and communications tracking.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-controls">
+          <button id="prev" aria-label="Previous slide">‹</button>
+          <button id="next" aria-label="Next slide">›</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certs" class="section container">
+      <h2>Certifications</h2>
+      <div class="cert-grid">
+        <div class="cert-card">
+          <h3>Responsive Web Design</h3>
+          <p class="muted">Completion certificate — practical front-end skills</p>
+        </div>
+
+        <div class="cert-card">
+          <h3>Data Management Essentials</h3>
+          <p class="muted">Spreadsheet workflows & data accuracy</p>
+        </div>
+
+        <div class="cert-card">
+          <h3>AI & Automation Fundamentals</h3>
+          <p class="muted">Tools and practical automation implementations</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section container">
+      <h2>Contact</h2>
+      <p class="muted">Interested in working together? Send me a message and I’ll reply promptly.</p>
+
+      <form class="contact-form" action="https://api.staticforms.xyz/submit" method="POST">
+        <input type="hidden" name="accessKey" value="sf_imnd7fe0bdg3l67n325cmehb">
+        <input type="hidden" name="redirectTo" value="https://jameskun.github.io/#contact-success">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+
+      <p id="contact-success" class="muted success-note" hidden>Thanks — your message was sent.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 James Kun — Web Developer • Virtual Assistant • AI Automation</p>
+    </div>
   </footer>
+
+  <!-- Tech modal (shared) -->
+  <div id="techModal" class="modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+      <h3 id="modalTitle">Tech</h3>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
