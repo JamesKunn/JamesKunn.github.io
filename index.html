@@ -14,7 +14,7 @@
         <p class="tag">Web Developer • Virtual Assistant • AI Automation Specialist</p>
       </div>
       <nav class="nav">
-        <a href="#about">About</a>
+        <a href="#intro">Home</a>
         <a href="#tech">Tech Stacks</a>
         <a href="#projects">Projects</a>
         <a href="#certs">Certifications</a>
@@ -24,84 +24,104 @@
   </header>
 
   <main>
+    <!-- INTRO -->
+    <section id="intro" class="section intro-section container">
+      <div class="intro-content">
+        <h2>Hello, I’m <span class="highlight">James Kun</span></h2>
+        <p>
+          A web developer and virtual assistant passionate about automation and building efficient workflows.
+          I enjoy creating simple, reliable systems that make work easier for teams and businesses.
+        </p>
+      </div>
+      <div class="intro-photo">
+        <img src="assets/profile.jpg" alt="James Kun profile photo" />
+      </div>
+    </section>
+
     <!-- ABOUT -->
-    <section id="about" class="section container">
-      <div class="about-grid">
-        <div class="about-text">
-          <h1>About Me</h1>
-          <p>
-            I’m James Kun — a results-driven professional specializing in front-end web development,
-            efficient data management, virtual assistance, and AI-enabled automation workflows.
-            I focus on clean interfaces and practical automations that save time and reduce errors.
-          </p>
-          <p>
-            I deliver reliable work for small businesses, entrepreneurs, and teams who need fast,
-            dependable support — both on the website side and the operational side.
-          </p>
-        </div>
-        <div class="about-photo">
-          <img src="assets/profile.png" alt="James Kun — profile photo" />
-        </div>
+    <section id="about" class="section container about-section">
+      <div class="about-content">
+        <h2>About Me</h2>
+        <p>
+          I’m a results-driven professional specializing in front-end web development,
+          efficient data management, and AI-assisted automation. I focus on clear design
+          and streamlined digital workflows to make daily operations faster and simpler.
+        </p>
+        <p>
+          With a background supporting businesses and teams remotely, I combine technical know-how
+          with reliable virtual assistance and data accuracy. My approach is grounded in practicality
+          — solving problems quietly and efficiently.
+        </p>
       </div>
     </section>
 
     <!-- TECH STACKS -->
     <section id="tech" class="section container">
-      <h1>Tech Stacks</h1>
+      <h2>Tech Stacks</h2>
       <p class="muted">Click a skill to view details about my experience.</p>
 
       <div class="tech-grid" id="techGrid">
-        <!-- items: update image src & data-tech as needed -->
-        <button class="tech-item" data-tech="PHP">
-          <img src="assets/tech/php.png" alt="PHP" />
-          <span>PHP</span>
+        <button class="tech-item" data-tech="HTML">
+          <img src="assets/tech/html.png" alt="HTML" />
+          <span>HTML</span>
         </button>
-
-        <button class="tech-item" data-tech="LARAVEL">
-          <img src="assets/tech/laravel.png" alt="Laravel" />
-          <span>Laravel</span>
+        <button class="tech-item" data-tech="CSS">
+          <img src="assets/tech/css.png" alt="CSS" />
+          <span>CSS</span>
         </button>
-
         <button class="tech-item" data-tech="JavaScript">
           <img src="assets/tech/js.png" alt="JavaScript" />
           <span>JavaScript</span>
         </button>
-
-        <button class="tech-item" data-tech="MYSQL">
-          <img src="assets/tech/mysql.png" alt="MySQL" />
-          <span>MySQL</span>
+        <button class="tech-item" data-tech="Python">
+          <img src="assets/tech/python.png" alt="Python" />
+          <span>Python</span>
         </button>
-
-        <button class="tech-item" data-tech="WORDPRESS">
-          <img src="assets/tech/wordpress.png" alt="WordPress" />
-          <span>WordPress</span>
+        <button class="tech-item" data-tech="Excel">
+          <img src="assets/tech/excel.png" alt="Excel" />
+          <span>Excel</span>
+        </button>
+        <button class="tech-item" data-tech="Zapier">
+          <img src="assets/tech/zapier.png" alt="Zapier" />
+          <span>Zapier</span>
+        </button>
+        <button class="tech-item" data-tech="ChatGPT">
+          <img src="assets/tech/chatgpt.png" alt="ChatGPT" />
+          <span>ChatGPT</span>
         </button>
       </div>
     </section>
 
     <!-- PROJECTS -->
     <section id="projects" class="section container">
-      <h1>Projects</h1>
+      <h2>Projects</h2>
       <p class="muted">A selection of work demonstrating websites, automation, and workflows.</p>
 
       <div class="carousel" id="carousel">
         <div class="slides">
           <div class="slide active">
-            <img src="assets/projects/project1.png" alt="Project 1 — Portfolio" />
+            <img src="assets/projects/project1.jpg" alt="Project 1 — Portfolio" />
             <div class="slide-caption">
-              <h3>Moodle-Based LMS</h3>
+              <h3>Personal Portfolio Website</h3>
               <p>Responsive site built with HTML, CSS, and JavaScript. Simple, fast, and easy to maintain.</p>
             </div>
           </div>
 
           <div class="slide">
-            <img src="assets/projects/project2.png" alt="Project 2 — Automation" />
+            <img src="assets/projects/project2.jpg" alt="Project 2 — Automation" />
             <div class="slide-caption">
-              <h3>Loan Tracking System for Microfinance Company</h3>
+              <h3>Data Automation Pipeline</h3>
               <p>AI-assisted process to collect, clean, and export client data — reducing manual entry time.</p>
             </div>
           </div>
 
+          <div class="slide">
+            <img src="assets/projects/project3.jpg" alt="Project 3 — VA system" />
+            <div class="slide-caption">
+              <h3>Virtual Assistant Workflow</h3>
+              <p>Task system for scheduling, document handling, and communications tracking.</p>
+            </div>
+          </div>
         </div>
 
         <div class="carousel-controls">
@@ -113,23 +133,28 @@
 
     <!-- CERTIFICATIONS -->
     <section id="certs" class="section container">
-      <h1>Certifications</h1>
+      <h2>Certifications</h2>
       <div class="cert-grid">
         <div class="cert-card">
-          <h3>SAP Analytics Certificate</h3>
+          <h3>Responsive Web Design</h3>
           <p class="muted">Completion certificate — practical front-end skills</p>
         </div>
 
         <div class="cert-card">
-          <h3>AWS Clound Foundation Graduate</h3>
+          <h3>Data Management Essentials</h3>
           <p class="muted">Spreadsheet workflows & data accuracy</p>
+        </div>
+
+        <div class="cert-card">
+          <h3>AI & Automation Fundamentals</h3>
+          <p class="muted">Tools and practical automation implementations</p>
         </div>
       </div>
     </section>
 
     <!-- CONTACT -->
     <section id="contact" class="section container">
-      <h1>Contact</h1>
+      <h2>Contact</h2>
       <p class="muted">Interested in working together? Send me a message and I’ll reply promptly.</p>
 
       <form class="contact-form" action="https://api.staticforms.xyz/submit" method="POST">
@@ -137,16 +162,12 @@
         <input type="hidden" name="redirectTo" value="https://jameskun.github.io/#contact-success">
         <label for="name">Name</label>
         <input id="name" name="name" type="text" required />
-
         <label for="email">Email</label>
         <input id="email" name="email" type="email" required />
-
         <label for="message">Message</label>
         <textarea id="message" name="message" rows="6" required></textarea>
-
         <button type="submit">Send Message</button>
       </form>
-
       <p id="contact-success" class="muted success-note" hidden>Thanks — your message was sent.</p>
     </section>
   </main>
@@ -157,7 +178,7 @@
     </div>
   </footer>
 
-  <!-- Tech modal (shared) -->
+  <!-- Tech modal -->
   <div id="techModal" class="modal" aria-hidden="true">
     <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
       <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
@@ -169,3 +190,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
